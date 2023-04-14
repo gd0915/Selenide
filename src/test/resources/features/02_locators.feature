@@ -9,6 +9,8 @@ Feature: locators feature
     And I wait for 3 seconds
     And I enter submit button
     And I wait for 3 seconds
+    Then verify login is successful
+    And I wait for 3 seconds
     And click on logout link
     Then I hold the browser open
 

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="26.929" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="navigations" name="navigations test" time="26.623">
+<testsuite name="Cucumber" time="6.899" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Checkbox and Radio Button" name="TC01_checkbox" time="6.681">
 <system-out><![CDATA[
-Given I navigate to "https://google.com"....................................passed
-And I navigate to "https://www.amazon.com"..................................passed
-And I wait for 3 seconds....................................................passed
-And I navigate back.........................................................passed
-And I navigate forward......................................................passed
-And I refresh the page......................................................passed
+Given I navigate to "https://testcenter.techproeducation.com/index.php?page=checkboxes".passed
+And I click on "Checkbox 1" if not already selected.........................passed
+And I click on "Checkbox 2" if not already selected.........................passed
 Then I hold the browser open................................................passed
 ]]></system-out>
 </testcase>
