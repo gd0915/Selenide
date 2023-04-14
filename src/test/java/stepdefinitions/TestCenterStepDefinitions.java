@@ -42,15 +42,33 @@ public class TestCenterStepDefinitions {
     @And("I click on {string} if not already selected")
     public void iClickOnIfNotAlreadySelected(String string) {
         if(string.equals("Checkbox 1")&&!testPage.checkBox1.isSelected()){
-            testPage.checkBox1.click();
+            testPage.checkBox1.shouldNotBe(checked);//not mandatory -> first verify it is not selected
+            testPage.checkBox1.click(); // select
             //Assert.assertTrue(testPage.checkBox1.isSelected());//Selenium assertion
             //testPage.checkBox1.shouldBe(Condition.checked);//selenide long version
-            testPage.checkBox1.shouldBe(Condition.checked);//selenide short version
+            testPage.checkBox1.shouldBe(checked);//selenide short version -> verify it is selected now
         }
         if(string.equals("Checkbox 2")&&!testPage.checkBox2.isSelected()){
             testPage.checkBox2.shouldNotBe(checked);
             testPage.checkBox2.click();
             testPage.checkBox2.shouldBe(checked);
+        }
+        if (string.equals("Red")&&!testPage.red.isSelected()) {
+            testPage.red.shouldNotBe(Condition.checked);
+            testPage.red.click();
+            testPage.red.shouldBe(Condition.checked);
+
+        }
+        if (string.equals("Yellow")&&!testPage.yellow.isSelected()) {
+            testPage.yellow.shouldNotBe(checked);
+            testPage.yellow.click();
+            testPage.yellow.shouldBe(checked);
+
+        }
+        if (string.equals("Football")&&!testPage.football.isSelected()) {
+            testPage.football.shouldNotBe(checked);
+            testPage.football.click();
+            testPage.football.shouldBe(checked);
         }
     }
 

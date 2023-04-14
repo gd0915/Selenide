@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="6.899" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Checkbox and Radio Button" name="TC01_checkbox" time="6.681">
+<testsuite name="Cucumber" time="16.863" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Checkbox and Radio Button" name="TC01_checkbox" time="6.791">
 <system-out><![CDATA[
 Given I navigate to "https://testcenter.techproeducation.com/index.php?page=checkboxes".passed
 And I click on "Checkbox 1" if not already selected.........................passed
 And I click on "Checkbox 2" if not already selected.........................passed
+Then I hold the browser open................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkbox and Radio Button" name="TC02_radio" time="3.3">
+<system-out><![CDATA[
+Given I navigate to "https://testcenter.techproeducation.com/index.php?page=radio-buttons".passed
+And I click on "Red" if not already selected................................passed
+Then I hold the browser open................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkbox and Radio Button" name="TC03_radio" time="3.276">
+<system-out><![CDATA[
+Given I navigate to "https://testcenter.techproeducation.com/index.php?page=radio-buttons".passed
+And I click on "Yellow" if not already selected.............................passed
+Then I hold the browser open................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkbox and Radio Button" name="TC04_radio" time="3.281">
+<system-out><![CDATA[
+Given I navigate to "https://testcenter.techproeducation.com/index.php?page=radio-buttons".passed
+And I click on "Football" if not already selected...........................passed
 Then I hold the browser open................................................passed
 ]]></system-out>
 </testcase>

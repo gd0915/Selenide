@@ -44,4 +44,9 @@ public class TestPage {
     public SelenideElement checkBox1 = $(By.id("box1"));
     public SelenideElement checkBox2 = $(By.id("box2"));
 
+    //Radio Button Elements
+    public SelenideElement red = $(By.id("red"));
+    public SelenideElement yellow = $(By.id("yellow"));
+    public SelenideElement football = $(By.id("football"));
+
 }
