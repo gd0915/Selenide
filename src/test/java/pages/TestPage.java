@@ -22,6 +22,8 @@ public class TestPage {
     //OR ALTERNATIVELY
     //2nd Way:
     public SelenideElement username = $(By.id("exampleInputEmail1"));
+    //using cssSelector:
+    public SelenideElement username1 = $("#exampleInputEmail1");
     public SelenideElement password = $(By.id("exampleInputPassword1"));
     public SelenideElement submitButton = $(By.xpath("//button[@type='submit']"));
     public SelenideElement logOutButton = $(By.partialLinkText("Logout"));//Since there is a space in text I used partial link text.
